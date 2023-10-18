@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import SearchBar from './components/SearchBar'
+import ImageCard from './components/imageCard'
 import './App.css'
 
 function App () {
@@ -39,7 +40,7 @@ function App () {
         <div className='grid-cards'>
           {
             issues.map((issue) => (
-              <imagecard
+              <ImageCard
                 id={issue.id}
                 title={issue.title}
                 key={issue.id}
